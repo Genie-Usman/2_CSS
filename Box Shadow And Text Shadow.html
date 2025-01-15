@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow And Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            margin: 5px 5px;
+            background-color: aquamarine;
+            padding: 6px 6px;
+            /* Syntax of Box-Shadow: offset-x offset-y blur-radius spread-radius color  */
+            /* box-shadow: 6px 6px 6px red; */
+            /* It can also be written in negative values */
+            box-shadow: -6px -6px 6px red;
+            /* If You want take the shadow inside the box then use inset property */
+        }
+        h2{
+            /* text-shadow: 2px 2px 2px white; */
+            /* It can also be written in negative values */
+            text-shadow: -3px -3px 3px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>I'm Batman</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem optio labore ea voluptate nam! Nobis quas saepe dignissimos quam, nisi commodi numquam excepturi voluptatem rem culpa maiores? Quas, quo.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>I'm Batman</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem optio labore ea voluptate nam! Nobis quas saepe dignissimos quam, nisi commodi numquam excepturi voluptatem rem culpa maiores? Quas, quo.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>I'm Batman</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem optio labore ea voluptate nam! Nobis quas saepe dignissimos quam, nisi commodi numquam excepturi voluptatem rem culpa maiores? Quas, quo.</p>
+        </div>
+    </div>
+</body>
+
+</html>

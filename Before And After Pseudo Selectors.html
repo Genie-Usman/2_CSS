@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After PSeudo Selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            font-size: 15px;
+            color: white;
+            background-color: black;
+        }
+        header::before{
+            background: url('https://images.unsplash.com/photo-1629905707362-03cf1a9f6e2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        .navigation{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 40px;
+            padding: 10px;
+            font-size: 20px;
+            font-family: 'Oldenburg', serif;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            padding: 4px 34px;
+            text-align: center;
+            font-family: 'Oldenburg', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+        <ul class="navigation">
+                <li class="navbar">Home</li>
+                <li class="navbar">About</li>
+                <li class="navbar">Die</li>
+                <li class="navbar">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome To Mani's World</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut cumque repellat magni excepturi ut quas obcaecati, dolores at iusto vitae vel amet voluptatem provident ex iure consequatur quo voluptatibus explicabo ullam similique id.
+    </section>
+</body>
+</html>

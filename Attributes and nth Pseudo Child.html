@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and Pseudo Selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 340px;
+            margin: auto;
+        }
+        .item{
+            display: block;
+            width: 100px;
+            margin: auto;
+        }
+        /* .item:nth-child(2n+0){
+            color: red;
+        }
+        .item:nth-child(3n+0){
+            color:rgb(28, 98, 57);
+        } */
+        .item:nth-child(odd){
+            color: red;
+        }
+        .item:nth-child(even){
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Attributes and Nth Child Pseudo</h2>
+        <ul>
+            <li class="item" id="item1">Item 1</li>
+            <li class="item" id="item2">Item 2</li>
+            <li class="item" id="item3">Item 3</li>
+            <li class="item" id="item4">Item 4</li>
+            <li class="item" id="item5">Item 5</li>
+            <li class="item" id="item6">Item 6</li>
+            <li class="item" id="item7">Item 7</li>
+            <li class="item" id="item8">Item 8</li>
+            <li class="item" id="item9">Item 9</li>
+            <li class="item" id="item10">Item 10</li>
+        </ul>
+    </div>
+</body>
+</html>

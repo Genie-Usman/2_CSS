@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility And Z-Index</title>
+    <style>
+        .box{
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: red;
+            width: 110px;
+            height: 110px;
+            display: none;
+            /* display property hides the element and also removes it's space */
+        }
+        #box2{
+            background-color: blue;
+            width: 110px;
+            height: 110px;
+            visibility: hidden;
+            /* visibility property hides the element but reserves it's space */
+        }
+        #box3{
+            background-color: green;
+            width: 110px;
+            height: 110px;
+        }
+        #box4{
+            background-color: orangered;
+            width: 110px;
+            height: 110px;
+        }
+        #box5{
+            background-color: hotpink;
+            width: 110px;
+            height: 110px;
+            position: relative;
+            top: 35px;
+            z-index: 35;
+            /* z-index decides which element will stack over the other */
+            /* if the z-index value of an element is higher than the other, it will stack over the other and vise versa */
+        }
+        #box6{
+            background-color: yellow;
+            width: 110px;
+            height: 110px;
+            position: relative;
+            top: 10px;
+            z-index: 34;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+</body>
+</html>
